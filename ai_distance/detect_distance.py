@@ -1,5 +1,4 @@
-from pdf2image import convert_from_path
-from PIL import Image
+
 import random
 import time
 import os
@@ -9,20 +8,12 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 import re
-from pdfminer.high_level import extract_text
-from itertools import pairwise
+
 from datetime import datetime
-import csv
-import numpy as np
-import atexit
-import signal
-import zipfile
-import shutil
 import sys
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
-from collections import OrderedDict
-import pandas as pd
+
 
 current_directory = os.getcwd()
 result_path = os.path.join(current_directory, "results")
